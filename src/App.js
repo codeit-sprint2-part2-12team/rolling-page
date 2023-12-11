@@ -1,4 +1,5 @@
 import GlobalStyle from './GlobalStyle';
+import PrimaryButton from './PrimaryButton';
 
 function App() {
   return (
