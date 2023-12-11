@@ -15,19 +15,19 @@ const Nav = styled.nav`
     margin: 0 auto;
   }
 
-  @media (min-width: 375px) {
+  @media screen and (min-width: 375px) {
     > div {
       padding: 1.2rem 2rem;
     }
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     > div {
       padding: 1.1rem 2.4rem;
     }
   }
 
-  @media (min-width: 1248px) {
+  @media screen and (min-width: 1248px) {
     > div {
       padding: 1.1rem 0rem;
       max-width: 120.7rem;
