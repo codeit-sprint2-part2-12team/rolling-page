@@ -1,10 +1,11 @@
 import NavBar from '../components/NavBar';
+import LandingMain from '../components/LandingMain';
 
 function LandingPage() {
   return (
     <>
       <NavBar />
-      <main></main>
+      <LandingMain />
       <footer></footer>
     </>
   );
