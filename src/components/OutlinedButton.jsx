@@ -61,9 +61,9 @@ const Button = styled.button`
   line-height: ${({ size }) => (size ? SIZES[size].lineHeight : `auto`)};
   letter-spacing: ${({ size }) => (size ? SIZES[size].letterSpacing : `auto`)};
 
-  > div {
+  /* > div {
     width: ${({ size }) => (size ? SIZES[size].width : `auto`)};
-  }
+  } */
 
   &:hover {
     border: 1px solid var(--gray-300, #ccc);
