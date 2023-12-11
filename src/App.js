@@ -1,13 +1,17 @@
 import GlobalStyle from './GlobalStyle';
-import PrimaryButton from './components/PrimaryButton';
-import SecondaryButton from './components/SecondaryButton';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
-      <SecondaryButton>Button</SecondaryButton>
-      <SecondaryButton disabled>Disabled</SecondaryButton>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="*" element={<div>잘못된 페이지임</div>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
