@@ -17,6 +17,10 @@ const Article = styled.article`
   margin: ${({ type }) => (type ? TYPE[type].margin : '3rem auto')};
   border-radius: 1.6rem;
   background: var(--Surface, #f6f8ff);
+  width: 120rem;
+
+  padding: ${({ type }) => (type ? TYPE[type].padding : '6rem 19.2rem 6rem 0')};
+  gap: ${({ type }) => (type ? TYPE[type].gap : '0')};
 
   > section {
     width: 72rem;
@@ -27,39 +31,19 @@ const Article = styled.article`
       width: 100%;
     }
   }
-  @media screen and(min-width: 375px) {
-  }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1247px) {
     flex-direction: ${({ type }) =>
       type ? TYPE[type].direction : 'column-reverse'};
     justify-content: ${({ type }) =>
       type ? TYPE[type].justifyContent : 'flex-end'};
-
-    width: 72rem;
-    height: 44rem;
+    margin: 4.9rem 0 3rem;
+    padding: 4rem;
     gap: 0;
+    width: 100%;
 
     > section {
-      width: 72rem;
-      height: 20.4rem;
-      flex-shrink: 0;
-      overflow: hidden;
-
-      > img {
-      }
-    }
-  }
-
-  @media screen and (min-width: 1248px) {
-    flex-direction: row;
-    width: 120rem;
-    height: 32.4rem;
-    padding: ${({ type }) =>
-      type ? TYPE[type].padding : '6rem 19.2rem 6rem 0'};
-    gap: ${({ type }) => (type ? TYPE[type].gap : '0')};
-
-    > section {
+      margin: 0 auto;
       width: 72rem;
       height: 20.4rem;
       flex-shrink: 0;
@@ -69,13 +53,25 @@ const Article = styled.article`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    gap: 5rem;
+    padding: 4.2rem;
+
+    > section {
+      width: 100%;
+      height: 20.4rem;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+  }
 `;
 
 const TextBox = styled.div`
   display: flex;
-  padding: 0rem;
   flex-direction: column;
   align-items: flex-start;
+
   gap: 0.8rem;
 
   > h1 {
@@ -93,10 +89,7 @@ const TextBox = styled.div`
     color: var(--gray-500, #555);
   }
 
-  @media screen and (min-width: 768px) {
-    padding: 4rem;
-  }
-  @media screen and(min-width: 1248px) {
+  @media screen and(max-width: 1248px) {
     padding: 4rem;
   }
 `;

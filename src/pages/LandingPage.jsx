@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import PrimaryButton from '../components/PrimaryButton';
+import LandingMain from '../components/LandingMain';
 
 const Footer = styled.footer`
   width: 100%;
@@ -10,13 +11,12 @@ const Footer = styled.footer`
   display: flex;
   justify-content: center;
 `;
-import LandingMain from '../components/LandingMain';
 
 function LandingPage() {
   return (
     <>
       <NavBar />
-      <main></main>
+      <LandingMain />
       <Footer>
         <PrimaryButton size="regular">구경 해보기</PrimaryButton>
       </Footer>

@@ -29,6 +29,7 @@ const Button = styled.button`
   color: var(--white, #fff);
   border: none;
   background: var(--purple-600, #9935ff);
+  width: 28rem;
 
   &:disabled {
     background: var(--gray-300, #ccc);
@@ -49,16 +50,8 @@ const Button = styled.button`
     background: var(--purple-800, #6e0ad1);
   }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (max-width: 1247px) {
     width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1248px) {
-    width: 28rem;
   }
 `;
 

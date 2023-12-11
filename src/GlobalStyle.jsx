@@ -11,6 +11,14 @@ html {
     padding: 0;
 }
 
+@media screen and (max-width: 1248px) {
+  main{
+    padding: 0 2.4rem;
+  }
+}
+
+
+
 `;
 
 export default GlobalStyle;
